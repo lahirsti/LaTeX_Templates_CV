@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper,roman]{moderncv} 
+\moderncvstyle{classic}  % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvhead{3}
+\moderncvcolor{black} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[utf8]{inputenc} % This defines the font-encoding you prefer to use
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{makecell}
+\usepackage{multicol}
+
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{natbib}
+
+%\AtBeginDocument{\hypersetup{colorlinks, urlcolor=Black}}
+%\usepackage[colorlinks=true, pdfstartview=FitV,linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{lastpage}
+
+\setlength{\hintscolumnwidth}{3cm}
+
+% personal data
+\name{Wade}{Wilson}
+%\title{LA}                               % optional, remove / comment the line if not wanted
+\address{MCU 2024}{90210 Beverly Hills}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\extrainfo{additional information}
+\phone[mobile]{+1 800-555-XForce}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+3~(456)~789~012}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{deadpool@hotmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{deadpool.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\social[linkedin][https://www.linkedin.com/company/slbglobal/mycompany/]{MCU}
+%\social[github][https://github.com/xxxxx]{xxxxxx}
+%\photo[10pt][0pt]{profil}  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+%\quote{\textbf{Engasjert masterstudent med interesse våpenteknologi. Legger vekt på løsninger innenfor armering av soldater.}} % Nøkkelkvalifkajsoner
+
+\fancyfoot[r]{Page \thepage\space of x}
+%\fancyhead[r]{\makecvtitle}
+
+\newcommand{\nokkelkvalifikasjoner}[1]{\begin{center}\large{\textbf{#1}}\end{center}}
+
+\begin{document}
+		
+	\begin{minipage}[t]{0.8\textwidth}%[t]
+		\makecvtitle
+	\end{minipage}
+	\begin{minipage}{0.2\textwidth}
+		%\centering
+		\includegraphics[height=0.12\textheight]{profil} % width=0.8\textwidth
+	\end{minipage}
+
+	% Nøkkelkvalifikasjoner
+	\nokkelkvalifikasjoner{Merc with a mouth}
+
+	% Inn i CVen
+	\input{frivillig}
+	\input{annet}
+	
+	% Vedlegg
+	%\includepdf[pages=1-, scale=1]{Something.pdf}
+
+\end{document}
